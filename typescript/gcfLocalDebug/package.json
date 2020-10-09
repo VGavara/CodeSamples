@@ -1,0 +1,19 @@
+{
+  "name": "gcff-helloworld",
+  "version": "1.0.0",
+  "description": "Google Cloud Functions Framework Hello World",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "debug": "node --inspect ./node_modules/@google-cloud/functions-framework --source=./dist --target=helloWorld",
+    "start": "functions-framework --source=./dist --target=helloWorld"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.8"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.7.1"
+  }
+}
